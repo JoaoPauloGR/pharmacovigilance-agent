@@ -1,0 +1,41 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.claude/
+.pytest_cache/
+
+# Virtual environments
+.venv
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Data
+data/
+
+# Personal tool notes
+.vibe-wise/
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Streamlit secrets
+.streamlit/secrets.toml

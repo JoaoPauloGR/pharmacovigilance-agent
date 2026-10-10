@@ -1,0 +1,26 @@
+[project]
+name = "faers-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.143.0",
+    "ollama>=0.6.3",
+    "pandas>=3.0.6",
+    "psycopg[binary]>=3.3.6",
+    "sqlalchemy>=2.1.4",
+    "streamlit>=1.65.0",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+markers = ["integration: needs a running Ollama server"]
